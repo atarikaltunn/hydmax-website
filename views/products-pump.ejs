@@ -1,0 +1,90 @@
+<%- include('partials/_header') -%>
+
+<body>
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+        <%- include('partials/_navbar') -%>
+
+        <!-- start page-title -->
+        <section class="page-title">
+        </section>        
+        <!-- end page-title -->
+
+
+        <!-- start of services -->
+        <section class="section-padding services-grid-section">
+            <div class="container">
+                <h2>Pumps</h2>
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="services-grids services-grid-view">
+                            <% for( let i = 0 ; i < pumps.length; i++) { %>
+                                <div class="grid">
+                                    <div class="inner mk-bg-img">
+                                         <div class="details ">
+                                            <div class="info">
+                                                 <img src="assets/images/products/pumps/<%= pumps[i].id %>.jpg" alt class="bg-image">
+                                                 <a href="service-single.html">
+                                                     <h3><i class="fi flaticon-construction"></i> Mechanical Works</h3>
+                                                 </a>
+                                                 <p>Ut enim ad minim veniam, quis nos trud exerci tation ullamco.</p>
+                                                 <a href="/products/pump/<%=courses[i].id%>" class="more">Get Details</a>
+                                            </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                                <!-- <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="course-item mb-5">
+                                        <div class="image-blog">
+                                            <img src="/images/blog_1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="course-br">
+                                            <div class="course-title">
+                                                <h2><a href="/courses/<%= courses[i].slug %>" title=""><%= courses[i].name %></a></h2>
+                                            </div>
+                                            <div class="course-desc">
+                                                <p><%= courses[i].description.substring(0, 100) + "..." %></p>
+                                            </div>
+                                        </div>
+                                        <div class="course-meta-bot">
+                                            <ul>
+                                                <li><i class="fa fa-user" aria-hidden="true"></i>Teacher Name</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>end col -->
+                                <% } %>
+                        </div> <!-- end services-grids -->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <div class="all-services">
+                    <a href="#" class="theme-btn">Load More</a>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end of services -->
+
+
+        <!-- start site-footer -->
+        <%- include('partials/_footer') -%>
+        <!-- end site-footer -->
+    </div>
+    <!-- end of page-wrapper -->
+
+
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins for this template -->
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.js"></script>
+
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
