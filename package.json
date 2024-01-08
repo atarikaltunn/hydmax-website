@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app",
-    "build": "node app",
+    "build": "CI=false node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ahmet Tarık Altun",
